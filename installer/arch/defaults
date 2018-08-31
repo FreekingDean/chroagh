@@ -20,7 +20,7 @@ esac
 if [ -z "$MIRROR" ]; then
     case "$ARCH" in
     i686 ) MIRROR="${CROUTON_MIRROR_arch:-https://mirror.archlinux32.org/\$arch/\$repo}";;
-    x86_64 ) MIRROR="${CROUTON_MIRROR_arch:-https://mirrors.kernel.org/archlinux/\$repo/os/\$arch}";;
+    x86_64 ) MIRROR="${CROUTON_MIRROR_arch:-https://mirrors.edge.kernel.org/archlinux/\$repo/os/\$arch}";;
     armv7h ) MIRROR="${CROUTON_MIRROR_alarm:-http://mirror.archlinuxarm.org/armv7h/\$repo}";;
     esac
 fi
